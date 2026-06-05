@@ -1,7 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
-import { navigationTheme, theme } from "../../theme";
+import { navigationTheme, theme } from "@theme/index";
 
 type TabIconName = keyof typeof Ionicons.glyphMap;
 
@@ -18,6 +18,12 @@ export default function TabsLayout() {
     <Tabs
       screenOptions={({ route }) => ({
         ...navigationTheme,
+        headerTitle: "",
+        headerShadowVisible: false,
+        headerStyle: {
+          ...navigationTheme.headerStyle,
+          height: 46,
+        },
         tabBarActiveTintColor: theme.colors.accent,
         tabBarInactiveTintColor: theme.colors.tabInactive,
         tabBarStyle: {

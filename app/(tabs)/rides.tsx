@@ -1,4 +1,4 @@
-import { ScreenPlaceholder } from "../../components/ScreenPlaceholder";
+import { ScreenPlaceholder } from "@shared/components/ScreenPlaceholder";
 
 export default function RidesScreen() {
   return (

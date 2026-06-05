@@ -1,6 +1,6 @@
 import { Stack } from "expo-router";
 
-import { navigationTheme } from "../../theme";
+import { navigationTheme } from "@theme/index";
 
 export default function AuthLayout() {
   return (
