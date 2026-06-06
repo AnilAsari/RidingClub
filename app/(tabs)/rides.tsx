@@ -1,10 +1,3 @@
-import { ScreenPlaceholder } from "@shared/components/ScreenPlaceholder";
+import { RidesScreen } from "@features/rides/screens/RidesScreen";
 
-export default function RidesScreen() {
-  return (
-    <ScreenPlaceholder
-      title="Ride Hub"
-      description="Screen shell for active rides, ride history, summaries, and personal riding stats."
-    />
-  );
-}
+export default RidesScreen;

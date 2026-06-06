@@ -1,5 +1,6 @@
 import { mockRiderProfile } from "@/src/mocks/profile.mock";
 import { mockClubs } from "@/src/mocks/clubs.mock";
+import { mockRideEvents } from "@/src/mocks/rideEvents.mock";
 import { Club } from "@features/clubs/types";
 import { RiderBike } from "@features/profile/types";
 
@@ -20,6 +21,11 @@ export async function getMockRiderProfile() {
 export async function getMockClubs() {
   await wait(getMockNetworkDelayMs());
   return mockClubs.filter((club) => canUserDiscoverClub(club, mockRiderProfile.garage));
+}
+
+export async function getMockRideEvents() {
+  await wait(getMockNetworkDelayMs());
+  return mockRideEvents;
 }
 
 function getMockNetworkDelayMs() {
