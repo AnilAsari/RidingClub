@@ -1,13 +1,14 @@
 import { StateMessage } from "@shared/components/StateMessage";
 
 import { ProfileOverview } from "../components/ProfileOverview";
+import { ProfileSkeleton } from "../components/ProfileSkeleton";
 import { useProfile } from "../hooks/useProfile";
 
 export function ProfileScreen() {
   const profileQuery = useProfile();
 
   if (profileQuery.isLoading) {
-    return <StateMessage title="Loading profile" message="Getting your rider profile ready." />;
+    return <ProfileSkeleton />;
   }
 
   if (profileQuery.isError || !profileQuery.data) {

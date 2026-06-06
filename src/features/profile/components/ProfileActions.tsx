@@ -14,6 +14,7 @@ type ActionItem = {
 
 const actions: ActionItem[] = [
   { label: "Edit profile", icon: "create-outline", route: "/profile/edit" },
+  { label: "Garage", icon: "construct-outline", route: "/profile/garage" },
   { label: "Badges", icon: "ribbon-outline", route: "/profile/badges" },
   { label: "Settings", icon: "settings-outline", route: "/profile/settings" },
 ];

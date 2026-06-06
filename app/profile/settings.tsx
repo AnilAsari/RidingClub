@@ -1,11 +1,3 @@
-import { ScreenPlaceholder } from "@shared/components/ScreenPlaceholder";
+import { SettingsScreen } from "@features/profile/screens/SettingsScreen";
 
-export default function SettingsScreen() {
-  return (
-    <ScreenPlaceholder
-      title="Settings"
-      eyebrow="Profile"
-      description="Screen shell for account, notifications, privacy, language, and logout."
-    />
-  );
-}
+export default SettingsScreen;

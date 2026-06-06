@@ -1,11 +1,3 @@
-import { ScreenPlaceholder } from "@shared/components/ScreenPlaceholder";
+import { EditProfileScreen } from "@features/profile/screens/EditProfileScreen";
 
-export default function EditProfileScreen() {
-  return (
-    <ScreenPlaceholder
-      title="Edit Profile"
-      eyebrow="Profile"
-      description="Screen shell for rider identity, city, photo, language, and public details."
-    />
-  );
-}
+export default EditProfileScreen;

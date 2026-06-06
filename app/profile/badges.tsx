@@ -1,11 +1,3 @@
-import { ScreenPlaceholder } from "@shared/components/ScreenPlaceholder";
+import { BadgesScreen } from "@features/profile/screens/BadgesScreen";
 
-export default function BadgesScreen() {
-  return (
-    <ScreenPlaceholder
-      title="Badges"
-      eyebrow="Profile"
-      description="Screen shell for earned milestones and launch achievement badges."
-    />
-  );
-}
+export default BadgesScreen;

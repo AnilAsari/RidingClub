@@ -9,7 +9,7 @@ const tabIcons: Record<string, TabIconName> = {
   index: "home",
   clubs: "people",
   rides: "speedometer",
-  routes: "map",
+  alerts: "notifications",
   profile: "person",
 };
 
@@ -38,7 +38,7 @@ export default function TabsLayout() {
       <Tabs.Screen name="index" options={{ title: "Home" }} />
       <Tabs.Screen name="clubs" options={{ title: "Clubs" }} />
       <Tabs.Screen name="rides" options={{ title: "Rides" }} />
-      <Tabs.Screen name="routes" options={{ title: "Routes" }} />
+      <Tabs.Screen name="alerts" options={{ title: "Alerts" }} />
       <Tabs.Screen name="safety" options={{ href: null }} />
       <Tabs.Screen name="profile" options={{ title: "Profile" }} />
     </Tabs>

@@ -23,9 +23,6 @@ export default function RootLayout() {
         <Stack.Screen name="rides/history" options={{ title: "Ride History" }} />
         <Stack.Screen name="rides/summary" options={{ title: "Ride Summary" }} />
         <Stack.Screen name="rides/[rideId]" options={{ title: "Ride Detail" }} />
-        <Stack.Screen name="routes/planner" options={{ title: "Route Planner" }} />
-        <Stack.Screen name="routes/offline-packs" options={{ title: "Offline Map Packs" }} />
-        <Stack.Screen name="routes/[routeId]" options={{ title: "Route Detail" }} />
         <Stack.Screen name="safety/hazards" options={{ title: "Hazard Map" }} />
         <Stack.Screen name="safety/report-hazard" options={{ title: "Report Hazard" }} />
         <Stack.Screen name="safety/sos-setup" options={{ title: "SOS Setup" }} />
@@ -35,6 +32,7 @@ export default function RootLayout() {
         />
         <Stack.Screen name="profile/badges" options={{ title: "Badges" }} />
         <Stack.Screen name="profile/edit" options={{ title: "Edit Profile" }} />
+        <Stack.Screen name="profile/garage" options={{ title: "Garage" }} />
         <Stack.Screen name="profile/settings" options={{ title: "Settings" }} />
       </Stack>
     </AppProviders>
